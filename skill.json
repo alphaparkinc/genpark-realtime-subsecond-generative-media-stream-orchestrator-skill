@@ -1,0 +1,41 @@
+{
+  "name": "genpark-realtime-subsecond-generative-media-stream-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time sub-100ms generative media streaming engine with WebRTC tensor pipes and high-FPS diffusion rendering mesh.",
+  "author": "genpark",
+  "category": "generative-media",
+  "tags": [
+    "realtime-diffusion",
+    "subsecond-media",
+    "webrtc-streaming",
+    "gpu-mesh",
+    "fal-ai"
+  ],
+  "inputs": {
+    "input_video_stream_uri": {
+      "type": "string"
+    },
+    "target_fps": {
+      "type": "integer"
+    },
+    "latency_target_ms": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "stream_session_id": {
+      "type": "string"
+    },
+    "rendered_fps": {
+      "type": "integer"
+    },
+    "end_to_end_glass_to_glass_latency_ms": {
+      "type": "integer"
+    },
+    "bidirectional_webrtc_stream_active": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
